@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.77.3",
+    "stylelint": "^16.6.1",
+    "stylelint-scss": "^6.3.0"
+  },
+  "scripts": {
+    "lint:scss": "DEBUG=stylelint:* stylelint '**/styles/*.scss'",
+    "lint:scss:fix": "stylelint '**/styles/*.scss' --fix",
+    "build": "sass styles/CLA_DA_Triage_main.scss build/CLA_DA_Triage_main.css --style=compressed"
+  }
+}
